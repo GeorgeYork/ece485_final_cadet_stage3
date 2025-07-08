@@ -256,6 +256,7 @@ begin
     -- update temporary registers to support pipelining (state machine no longer needed... as each instruction is at a different state)
     -- Adding stall... if stall, then do not move the pipeline registers, and insert NOP instead
     pipe_reg: pipeline_registers
+        port map (
             clk    => clk,
             reset  => reset,
             start_stall => start_stall,

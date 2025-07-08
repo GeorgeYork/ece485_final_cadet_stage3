@@ -98,7 +98,7 @@ begin
                 -- <add other registers>
 
             end if;                            
-            ex_mem_reg_write <= id_ex_reg_write;   -- let instructions prior to stall complete
+            ex_mem_reg_write <= id_ex_reg_write;   -- let instructions prior to stall complete, or move to next state
 
             ex_mem_npc <= id_ex_npc;
     
